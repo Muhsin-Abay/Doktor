@@ -2,32 +2,66 @@
 <html lang="en-US">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>GitHub içinde TeX</title>
+    <title>Şirket Doktorluğu</title>
   <style>
     body { 
-        max-width: 600px; 
-        background: url(./kitaplik.jpg);
+        background: indigo;
         font-family: Trebuchet, Verdana, sans-serif;
         font-size: 16px;
         line-height: 1.5;
-        margin: 12px;
+        margin: 0;
     }
-    div#content {
-        background: #cef;
-        width: 400px;
-        max-width: 100%;
-        margin: 10% auto;
+    h2 {
+        font-family: Cambria, Cochin, Georgia, Times, serif;
+        font-size: 28px;
+        background: indigo;
+        color: yellow;
         padding: 1em;
     }
+    div.content {
+        background: #cef;
+        width: 100%;
+    }
+  @media screen and (min-width: 450px) {
+    body {
+        background: url(./kitaplik.jpg);
+        margin: auto;
+    }
+    div.content {
+        display: inline-block;
+        vertical-align: top;
+        width: 400px;
+        padding: 1em;
+        margin: 1em;
+    }
+  }
     li {
         margin: 8px;
     }
-    img {
-        max-width: 100%; 
+    .my-item {
+        padding: 10px;
+    }
+    .my-text {
+        width: 70%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 5px;
+        font-size: small;
+    }
+    .my-item a {
+        display: block;
+        margin: 8px 0;
+    }
+    .my-item img {
+        background-color: gray;
+        display: inline-block;
+        width: 72px;
+        aspect-ratio: 1;
+        margin: 5px;
     }
   </style>  
-<div id=content>
-  <h2>Şirket Doktorluğu notları</h2>
+<div class=content>
+  <h2>Şirket Doktorluğu Notları</h2>
   <ol>
     <li>
     <li>
@@ -40,9 +74,28 @@
     <li>
     <li>
     <li>
-    <li>
   </ol><br><br>
-
-  Deneme için sadece bir bölüm ekledim
+  Deneme için sadece bir bölüm var.<br>
+  Arka plan resmi değiştirebiliriz.<br>
+  <br>
+</div>
+<div class=content>
+  <h2>Muhsin Abay</h2>
+  &ensp;Yayınlanmış <a target=NewTab href="https://www.kitapyurdu.com/yazar/muhsin-abay/13865.html">diğer kitapları</a>:
+  <div class="my-item">
+    <a target=NewTab href="https://zaman-abay.blogspot.com/2015/05/onsoz.html">Zamanı Değerlendirmek -- 2000</a>
+    <img src="https://maeyler.github.io/image/zaman kapak.jpg" />
+    <div class="my-text">Tenhaları arayan ve az hareketli hayâtı seven bir mizaca sahip olmakla berâber, Cenâb-ı Hakk'ın takdîri olarak, farklı meslek ve meşrepten insanlarla...</div>
+  </div>
+  <div class="my-item">
+    <a target=NewTab href="https://buyukleryolunda.blogspot.com/2020/07/onsoz.html">Büyükler Yolunda Öpülesi İzler -- 2015</a>
+    <img src="https://maeyler.github.io/image/büyükler kapak.jpg" />
+    <div class="my-text">Günümüze kadar gelen âlimler ve evliyâlar silsilesinden ziyaret etmekle şereflendiğimiz beldeler: Hicaz, Delhi, Semerkand, Buhâra, Kâhire, Bağdad ve Anadolu.</div>
+  </div>
+  <div class="my-item">
+    <div>Sahip Olmaktan Kul Olmaya -- 2022</div>
+    <img src="./image/kul olmak.jpg" />
+    <div class="my-text">İnsan mutlu olmak, huzur içinde yaşamak ve aradığını bulmuş olarak ömrünü tamamlamak ister. Ama araştırmalar, istatistikler...</div>
+  </div>
 </div>
 </html>
