@@ -2,10 +2,11 @@
 <html lang="en-US">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="./image/doktor.jpg">
     <title>Şirket Doktorluğu</title>
   <style>
     body { 
-        background: indigo;
+        background: url(./image/kitaplik.jpg);
         font-family: Trebuchet, Verdana, sans-serif;
         font-size: 16px;
         line-height: 1.5;
@@ -17,6 +18,7 @@
         background: indigo;
         color: yellow;
         padding: 1em;
+        margin: 0;
     }
     div.content {
         background: #cef;
@@ -24,7 +26,6 @@
     }
   @media screen and (min-width: 450px) {
     body {
-        background: url(./kitaplik.jpg);
         margin: auto;
     }
     div.content {
@@ -36,7 +37,7 @@
     }
   }
     li {
-        margin: 8px;
+        margin: 13px;
     }
     .my-item {
         padding: 10px;
@@ -59,6 +60,14 @@
         aspect-ratio: 1;
         margin: 5px;
     }
+    .container {
+        position: relative;
+    }
+    .container img {
+        position: absolute;
+        top: 0; right: 0;
+        width: 96px;
+    }
   </style>  
 <div class=content>
   <h2>Şirket Doktorluğu Notları</h2>
@@ -74,11 +83,13 @@
     <li><a href="./docs/9.strateji.pdf">ŞİRKET STRATEJİSİ</a>
     <li><a href="./docs/10.DEGISIM.pdf">DEĞİŞİMİ BAŞARMAK</a>
     <li><a href="./docs/11.Degisim.pdf">DEĞİŞİM ORGANİZASYONU</a>
-  </ol><br><br>
-  <br><br><br>
+  </ol><br>
 </div>
 <div class=content>
-  <h2>Dr Muhsin Abay</h2>
+  <div class=container>
+    <h2>Dr Muhsin Abay</h2>
+    <img src="./image/doktor.jpg">
+  </div>
   &ensp;Yayınlanmış <a target=NewTab href="https://www.kitapyurdu.com/yazar/muhsin-abay/13865.html">diğer kitapları</a>:
   <div class="my-item">
     <a target=NewTab href="https://zaman-abay.blogspot.com/2015/05/onsoz.html">Zamanı Değerlendirmek -- 2000</a>
