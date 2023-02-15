@@ -8,13 +8,13 @@
     body { 
         background: url(./image/kitaplik.jpg);
         font-family: Trebuchet, Verdana, sans-serif;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1.5;
         margin: 0;
     }
     h2 {
         font-family: Cambria, Georgia, Times, serif;
-        font-size: 27px;
+        font-size: 26px;
         background: indigo;
         color: yellow;
         padding: 1em;
@@ -40,7 +40,7 @@
         margin: 13px;
     }
     .my-item {
-        padding: 10px;
+        padding: 4px;
     }
     .my-text {
         width: 70%;
@@ -50,15 +50,21 @@
         font-size: small;
     }
     .my-item a {
+        margin: 8px 0;
+    }
+    .my-item > a:nth-child(1) {
         display: block;
         margin: 8px 0;
     }
     .my-item img {
         background-color: gray;
-        display: inline-block;
         width: 72px;
         aspect-ratio: 1;
         margin: 5px;
+    }
+    .content p {
+        margin: 4px;
+        font-size: 14px;
     }
     .container {
         position: relative;
@@ -66,7 +72,7 @@
     .container img {
         position: absolute;
         top: 0; right: 0;
-        width: 96px;
+        width: 91px;
     }
   </style>  
 <div class=content>
@@ -88,17 +94,27 @@
 <div class=content>
   <div class=container>
     <h2>Dr Muhsin Abay</h2>
+    <img src="./image/muhsin-abay.jpg">
+  </div>
+  <p><br>Karaman Gödetağini (Gülkaya) köyünde 1945 yılında doğdu. İlk orta ve liseyi Karaman’da okudu. 1968 yılında Ege Üniversitesi Ziraat Fakültesini bitirdi. Askerliğini 24 ay, Topçu yedek subay olarak yaptı. 1972-73 yıllarında Fransa Montpellier’de Kalkınma ve Karar Alma konusunda eğitim aldı. 1976 yılında Ege Üniversitesinde Tarım İşletmeciliği doktorasını tamamladı. Aynı Üniversitenin Ziraat ve Gıda Bilimleri Fakültelerinde İşletmecilik dersleri verdi.</p>
+  <p>1981-84 yıllarında Ege Bölgesi Sanayi Odası (EBSO) Etüd-Araştırma Müdürlüğü yaptı. 1984-1989 yıllarında İzmir Büyükşehir Belediyesinde Genel Sekreter Yardımcısı olarak; Encümen Başkanlığı yaptı, Şehirleşme ve Çevre koruma alanlarında çalıştı.</p>
+  <p>1990-2002 yıllarında İstanbul’da İhlas Holding’te yöneticilik ve danışmanlık yaptı. 2004-2008 yıllarında Türkiye Gazetesinde yazdı.</p><br><br>
+</div>
+<div class=content>
+  <div class=container>
+    <h2>Yayınlanmış Kitapları</h2>
     <img src="./image/doktor.jpg">
   </div>
-  &ensp;Yayınlanmış <a target=NewTab href="https://www.kitapyurdu.com/yazar/muhsin-abay/13865.html">diğer kitapları</a>:
   <div class="my-item">
     <a target=NewTab href="https://zaman-abay.blogspot.com/2015/05/onsoz.html">Zamanı Değerlendirmek -- 2000</a>
-    <img src="https://maeyler.github.io/image/zaman kapak.jpg" />
+    <a target=NewTab href="https://zaman-abay.blogspot.com/2015/05/onsoz.html">
+      <img src="./image/zaman kapak.jpg" /></a>
     <div class="my-text">Tenhaları arayan ve az hareketli hayâtı seven bir mizaca sahip olmakla berâber, Cenâb-ı Hakk'ın takdîri olarak, farklı meslek ve meşrepten insanlarla...</div>
   </div>
   <div class="my-item">
     <a target=NewTab href="https://buyukleryolunda.blogspot.com/2020/07/onsoz.html">Büyükler Yolunda Öpülesi İzler -- 2015</a>
-    <img src="https://maeyler.github.io/image/büyükler kapak.jpg" />
+    <a target=NewTab href="https://buyukleryolunda.blogspot.com/2020/07/onsoz.html">
+      <img src="./image/büyükler kapak.jpg" /></a>
     <div class="my-text">Günümüze kadar gelen âlimler ve evliyâlar silsilesinden ziyaret etmekle şereflendiğimiz beldeler: Hicaz, Delhi, Semerkand, Buhâra, Kâhire, Bağdad ve Anadolu.</div>
   </div>
   <div class="my-item">
@@ -106,5 +122,6 @@
     <img src="./image/kul olmak.jpg" />
     <div class="my-text">İnsan mutlu olmak, huzur içinde yaşamak ve aradığını bulmuş olarak ömrünü tamamlamak ister. Ama araştırmalar, istatistikler...</div>
   </div>
+  <p><a target=NewTab href="https://www.kitapyurdu.com/yazar/muhsin-abay/13865.html">Kitap Yurdu</a></p>
 </div>
 </html>
